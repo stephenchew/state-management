@@ -22,7 +22,7 @@ const Claims: FC = () => {
       {state.claims && (
         <ul>
           {state.claims.map((i) => (
-            <li>
+            <li key={i.title}>
               <b>{i.title}</b>
               <br />
               <i style={{ fontSize: '0.7rem' }}>
