@@ -1,18 +1,14 @@
 import { FC } from 'react';
 import Welcome from './welcome';
 
-type Prop = {
-  name: string;
-};
-
-const Header: FC<Prop> = ({ name }) => {
+const Header: FC = () => {
   return (
     <div
       className="container"
       data-title="Header"
       style={{ display: 'flex', justifyContent: 'flex-end', width: '97%' }}
     >
-      <Welcome name={name} />
+      <Welcome />
     </div>
   );
 };
